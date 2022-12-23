@@ -1,5 +1,7 @@
 #include "widget.h"
 
+#include <GL/glut.h>
+
 Widget::Widget(QWidget *parent)
     : QOpenGLWidget(parent)
 {

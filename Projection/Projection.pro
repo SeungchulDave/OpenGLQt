@@ -10,14 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    qtglut.cpp \
+   \
     widget.cpp
 
 HEADERS += \
-    qtglut.h \
+  \
     widget.h
     windows {
-      LIBS += -lopengl32 -lfreeglut -lglu32 -LC:\Qt\6.3.1\msvc2019_64\lib
+      LIBS += -lopengl32 -lglu32 -LC:\Qt\6.3.1\msvc2019_64\lib
       }
 
 # Default rules for deployment.

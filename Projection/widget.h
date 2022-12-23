@@ -14,11 +14,20 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+    void drawPyramid();
+
     GLfloat xAngle, yAngle, zAngle;
+    GLfloat left, right, bottom, top, bNear, bFar;
+    GLfloat fov;
+    int bProjection;
+    int bObject;
+    GLsizei lastWidth, lastHeight;
 
 private:
     void initializeGL();
     void paintGL();
     void resizeGL(int w, int h);
+protected:
+    void keyPressEvent(QKeyEvent * evnet);
 };
 #endif // WIDGET_H
